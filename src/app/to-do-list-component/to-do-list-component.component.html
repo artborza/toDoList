@@ -1,0 +1,7 @@
+<div class="box-tasks" [class.selected]="isSelected" (click)="doSomething()">
+
+    <div class="task">&nbsp;{{ task.name}}
+        <div style="text-align: right;"><button (click)="remove()">remove</button></div>
+    </div>
+
+</div>

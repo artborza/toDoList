@@ -1,0 +1,16 @@
+<div class="container">
+    <p style="color: #353536;">ToDoListComponent</p>
+
+    <app-to-do-list-component *ngFor="let t of tasks" [task]="t" (OnRemove)="removeTask($event)" (OnClick)="clickTask($event)"></app-to-do-list-component>
+    <div class="add">
+        <h3>&nbsp;Add task</h3>
+        <p> &nbsp;Name: <input [(ngModel)]="name" /></p>
+        <p> &nbsp;Description: <input [(ngModel)]="description" /></p>
+        <p style="text-align: center;"><button (click)="add(name,description)">add</button></p>
+    </div>
+
+    <div class="add" *ngFor="let t of tasksAdon">
+        <h3>Task:{{t.name}}</h3>
+        <p> &nbsp;Description:{{t.description}}</p>
+    </div>
+</div>

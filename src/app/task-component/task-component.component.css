@@ -1,0 +1,11 @@
+.container {
+    width: 30%;
+    background-color: #DBDBDB;
+    border: 1px solid;
+}
+
+.add {
+    margin: 5%;
+    background-color: #DBDBDB;
+    border: 1px solid;
+}
